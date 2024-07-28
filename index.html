@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Facebook-like Login and Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h1>YOUR BOOK</h1>
+      <p>Connect with friends and the world around you on YOUR BOOK.</p>
+    </div>
+    <div class="right-panel">
+      <form id="auth-form">
+        <div id="signup-fields" class="hidden">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name"><br>
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone"><br>
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country"><br>
+        </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="radio" id="login" name="authType" value="login" checked>
+        <label for="login">Login</label>
+        <input type="radio" id="signup" name="authType" value="signup">
+        <label for="signup">Sign Up</label><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <div id="success-message" class="hidden">
+        <h2>Welcome!</h2>
+        <img src="360_F_87970620_Tdgw6WYdWnrZHn2uQwJpVDH4vr4PINSc.jpg" alt="Welcome Image">
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
